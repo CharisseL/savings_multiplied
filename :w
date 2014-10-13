@@ -11,20 +11,19 @@
 		<header>
 			<nav id="authentification">
 				<ul>
-					<li><a href="#" class="login">sign in</a></li>
-					<li><a href="#" class="logout">sign out</a></li>
+					<li><a href="#" onclick="show(document.querySelector('.login-modal'))">sign in</a></li>
+					<li><a href="#">sign out</a></li>
 				</ul>
 			</nav>
 			<section>			
-				<!--<h1><img src="images/savings_multiplied_callout.png"</h1>--!>
 				<h1>Savings</h1>
 				<h1 id="multiple">Multiplied</h1>
 				<nav>
 					<ul>
-						<li><a href="#" class="classname: aboutButton">About</a>
-						<li><a href="#" class="contactButton">Contact</a>
-						<li><a href="#" class="blogButton">Blog</a>
-						<li><a href="#" class="pressButton">Press</a>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Press</a></li>
 					</ul>
 				</nav>
 				<h3>where parents of multiples save, sell & shop</h3>
@@ -47,21 +46,21 @@
 			</nav>
 		</header>
 		<section>
-			<div class="pitch">
+			<div>
 				<h3>We're making one aspect of life easier for parents of multiples:</h3>
         <p>buying and selling gently used sets of clothes!</p>
-        <a href="#" class="shopButton">Shop Now!</a>
+        <a href="#">Shop Now!</a>
       </div>
-			<ul class="babies">
+			<ul>
 				<li><img src="images/twins.jpg"></li>
 				<li><img src="images/triplets.jpg"></li>
 				<li><img src="images/quads.jpg"></li>
 			</ul>	
 			<ul id="social">
-        <li><a href="#"><img src="images/facebook_callout.png" alt="find us on facebook"</a></li>
-        <li><a href="#"><img src="images/twitter_callout.png" alt="follow us on twitter"</a></li>
-        <li><a href="#"><img src="images/message_board_callout.png" alt="Message Boards"</a></li>
-        <li><a href="#"><img src="images/special_offers_callout.png"alt="Special Offers"</a></li>
+        <li><a href="#"><img src="" alt="find us on facebook"</a></li>
+        <li><a href="#"><img src="" alt="follow us on twitter"</a></li>
+        <li><a href="#"><img src="" alt="Message Boards"</a></li>
+        <li><a href="#">Special Offers</a></li>
       </ul>
 		</section>		
 		<footer>
@@ -75,20 +74,28 @@
 				</ul>
 			</nav>
 		</footer>
-		<div class="login-modal hidden">
-			<div class="lightbox"></div>
-			<div class="login-form">
-				<form>
-					<label>Username</label>
-					<input type="text" placeholder="username">
-					<label>Password</label>
-					<input type="password" placeholder="password">
-					<input type="submit" value="Login">
-					<input type="button" value="Cancel">
-				</form>
-			</div>
+		<div class="login-modal">
+			<form>
+				<label>Username</label>
+				<input type="text" placeholder="username">
+				<label>Password</label>
+				<input type="password" placeholder="password">
+				<input type="submit" value="Login">
+				<input type="button" value="cancel">
+			</form>
 		</div>
-		<script src="scripts/main.js"></script>
 	</body>
+	<script>
+		function hide(element) {
+			element.style.display = "none";
+		}
+		function show(element) {
+			element.style.display = "block";
+		}
+	</script>
+	<script>
+		function 
+	</script>
+
 </html>
 						
